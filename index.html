@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        
+        <link rel="preload" href="./fonts/Gilroy-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">        <link rel="preload" href="./fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="./fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="./fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="./fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="./fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header class="header">
+    <div class="container">
+        <div class="header__wrap">
+            <a href="#" class="header__logo">
+                <picture>
+                    <img src="./img/svg/logo.svg" alt="">
+                </picture>
+            </a>
+
+            <div class="header__burger-wrap">
+                <button class="header__burger js-header-burger">
+                    <svg data-type="burger">
+                        <use xlink:href="./img/sprites/sprite.svg#icon-menu"></use>
+                    </svg>
+    
+                    <svg data-type="close">
+                        <use xlink:href="./img/sprites/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+            
+
+            <div class="header__contacts">
+                <div class="header__contacts-item">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#pin_icon"></use>
+                    </svg>
+                    <div class="header__contacts-text">Краснодар, Длинное название улицы, д. 23/5</div>
+                </div>
+                <div class="header__contacts-item">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#phone"></use>
+                    </svg>
+                    <a href="tel: +7-913-456-78-90 " class="header__contacts-text">+7 913 456 78 90</a>
+                </div>
+            </div>
+            
+
+            <button class="header__btn btn btn_blue"  data-fancybox data-src="#modal-test-drive">Записаться на тест-драйв</button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+   
+    <section class="intro">
+    <div class="container">
+        <h1 class="intro__title title-lg">Новый бренд электромобилей в России</h1>
+
+        <div class="intro__video-wrap">
+            <video
+                    class="intro__video js-video video-js"
+                    poster="./img/vide-poster.jpg"
+                    >
+                <source src="./media/intro-video.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+</section>
+
+    <section class="models js-models">
+    <div class="container">
+        <div class="models__wrap">
+            <div class="models__left">
+                <h2 class="models__title title-md">Модели</h2>
+            </div>
+            <div class="models__right">
+                <a href="#sedan" class="models__item">
+    <div class="models__img">
+        <img src="./img/content/models/car_01.png" alt="">
+    </div>
+    <div class="models__text text-xsm">
+        <span class="models__name">седан</span>
+        <span class="models__model">evolute i-PRO</span>
+    </div>
+</a>
+<a href="#crossover" class="models__item">
+    <div class="models__img">
+        <img src="./img/content/models/car_02.png" alt="">
+    </div>
+    <div class="models__text text-xsm">
+        <span class="models__name">кроссовер</span>
+        <span class="models__model">evolute i-joy</span>
+    </div>
+</a>
+<a href="#minivan" class="models__item">
+    <div class="models__img">
+        <img src="./img/content/models/car_03.png" alt="">
+    </div>
+    <div class="models__text text-xsm">
+        <span class="models__name">Минивэн</span>
+        <span class="models__model">evolute i-van</span>
+    </div>
+</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="capabilities">
+    <div class="container">
+        <div class="capabilities__top">
+            <div class="capabilities__left">
+                <h2 class="capabilities__title title-md">Возможности</h2>
+                <p class="capabilities__text">
+                    оптимальные параметры <br> для комфортного передвижения
+                </p>
+            </div>
+            <div class="capabilities__right">
+                <div class="capabilities__item">
+                    <div class="capabilities__icon">
+                        <img src="./img/content/capabilities/icon_01.svg" alt="">
+                    </div>
+                    <div class="capabilities__text">
+                        <span class="capabilities__text-lg text-lg">от 163 л.с.</span>
+                        <span class="capabilities__text-sm">мощность двигателя</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="capabilities__wrap">
+            <div class="capabilities__item">
+                <div class="capabilities__icon">
+                    <img src="./img/content/capabilities/icon_02.svg" alt="">
+                </div>
+                <div class="capabilities__text">
+                    <span class="capabilities__text-lg text-lg">53кВТ</span>
+                    <span class="capabilities__text-sm">емкость батареи</span>
+                </div>
+            </div>
+            <div class="capabilities__item">
+                <div class="capabilities__icon">
+                    <img src="./img/content/capabilities/icon_03.svg" alt="">
+                </div>
+                <div class="capabilities__text">
+                    <span class="capabilities__text-lg text-lg">30 мин/80%</span>
+                    <span class="capabilities__text-sm">быстрая зарядка</span>
+                </div>
+            </div>
+            <div class="capabilities__item">
+                <div class="capabilities__icon">
+                    <img src="./img/content/capabilities/icon_04.svg" alt="">
+                </div>
+                <div class="capabilities__text">
+                    <span class="capabilities__text-lg text-lg">400 + км</span>
+                    <span class="capabilities__text-sm">запас хода</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="model-card">
+    <div class="container">
+        <div class="model-card__wrap" id="sedan">
+            <div class="model-card__item">
+                <div class="model-card__content">
+                    <div class="model-card__title title-md">evolute</div>
+                    <div class="model-card__icon">
+                        <img src="./img/content/model-card/i-pro.svg" alt="">
+                    </div>
+                    <div class="model-card__img">
+                        <picture>
+                            <img src="./img/content/model-card/img_1.png" alt="" loading="lazy" width="1000" height="666">
+                        </picture>
+                    </div>
+                </div>
+                <ul class="model-card__list">
+                    <li class="model-card__list-item">
+                        <span>Яркий внешний вид, практичный салон</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Качественные материалы отделки</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Отсутствие расходов на топливо</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Богатое опциональное оснащение</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Великолепные ходовые качества</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Надежная конструкция</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="model-card__bottom js-model-card-panel">
+                <div class="model-card__price">
+                    <span class="model-card__price-title text-md">Стоимость</span>
+                    <span class="model-card__numb">2 990 000 ₽</span>
+                    <span class="model-card__text">*без учета субсидирования</span>
+                </div>
+                <div class="model-card__right">
+                    <div class="model-card__btn js-model-card-btn" data-type="tech">
+                        <div class="model-card__btn-icon">
+                            <img src="./img/content/model-card/settings.svg" alt="">
+                        </div>
+                        <div class="model-card__btn-text">
+                            Технические <br> характеристики
+                        </div>
+                        <div class="model-card__btn-switch">
+                            <svg data-type="plus">
+                                <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                            </svg>
+
+                            <svg data-type="minus">
+                                <use xlink:href="./img/sprites/sprite.svg#minus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="model-card__btn js-model-card-btn" data-type="equipment">
+                        <div class="model-card__btn-icon">
+                            <img src="./img/content/model-card/list.svg" alt="">
+                        </div>
+                        <div class="model-card__btn-text">
+                            Комплектация <br> автомобиля
+                        </div>
+                        <div class="model-card__btn-switch">
+                            <svg data-type="plus">
+                                <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                            </svg>
+
+                            <svg data-type="minus">
+                                <use xlink:href="./img/sprites/sprite.svg#minus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-card__tables">
+    <div class="model-card__table" data-type="tech">
+        <div class="model-card__table-title">
+            Технические характеристики
+        </div>
+
+        <div class="model-card__table-flex">
+            <ul class="model-card__tech">
+    <li class="model-card__tech-item">
+        <span>Максимальная мощность (л.с.)</span>
+        <b>163</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Максимальный крутящий момент Нм</span>
+        <b>230</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Максимальная скорость, (км/ч)</span>
+        <b>150</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время разгона до 100 км/ч</span>
+        <b>9.5</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Емкость батареи кВч</span>
+        <b>58</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Запас хода (км)</span>
+        <b>420</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Длина (мм)</span>
+        <b>4680</b>
+    </li>
+</ul>
+
+<ul class="model-card__tech">
+    <li class="model-card__tech-item">
+        <span>Ширина (мм)</span>
+        <b>1720</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Высота (мм)</span>
+        <b>1530</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Колёсная база (мм)</span>
+        <b>2700</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Объем багажного отделения (л)</span>
+        <b>502</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время медленной зарядки (Type2: от 5% до 100% (ч.))</span>
+        <b>8.5</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время быстрой зарядки (GB/T, CСS2: 30% -80%) (мин.)</span>
+        <b>36</b>
+    </li>
+</ul>
+        </div>
+        
+    </div>
+    <div class="model-card__table" data-type="equipment">
+        <div class="model-card__table-title">
+            Комплектация автомобиля
+        </div>
+
+        <div class="model-card__table-flex">
+            <ul class="model-card__equipment">
+    <li class="model-card__equipment-item">
+        Галогеновые передние фары
+    </li>
+    <li class="model-card__equipment-item">
+        Кожаная обивка сидений
+    </li>
+    <li class="model-card__equipment-item">
+        Розетки USB на втором ряду × 2
+    </li>
+    <li class="model-card__equipment-item">
+        Регулировка руля по высоте
+    </li>
+    <li class="model-card__equipment-item">
+        Задние датчики парковки
+    </li>
+    <li class="model-card__equipment-item">
+        Электрический усилитель руля (EPS)
+    </li>
+    <li class="model-card__equipment-item">
+        Электронный стояночный тормоз（EPB）
+    </li>
+    <li class="model-card__equipment-item">
+        Обогрев заднего стекла
+    </li>
+    <li class="model-card__equipment-item">
+        Зеркала заднего вида с электроприводом и обогревом
+    </li>
+    <li class="model-card__equipment-item">
+        Предпусковой подогреватель батареи и салона Webasto
+    </li>
+    <li class="model-card__equipment-item">
+        Электропривод передних и задних стеклоподъемников
+    </li>
+    <li class="model-card__equipment-item">
+        Климат-контроль
+    </li>
+    <li class="model-card__equipment-item">
+        Система рекуперации энергии
+    </li>
+    <li class="model-card__equipment-item">
+        Крепление детского кресла ISO FIX
+    </li>
+    <li class="model-card__equipment-item">
+        Центральный замок с ДУ
+    </li>
+</ul>
+
+<ul class="model-card__equipment">
+    <li class="model-card__equipment-item">
+        Иммобилайзер
+    </li>
+    <li class="model-card__equipment-item">
+        Комбинированная панель приборов
+        (7-дюймовый TFT-экран + двухсегментный экран)
+    </li>
+    <li class="model-card__equipment-item">
+        Радио + MP3 плеер + USB / AUX
+    </li>
+    <li class="model-card__equipment-item">
+        2 динамика
+    </li>
+    <li class="model-card__equipment-item">
+        Легкосплавные диски 17”
+    </li>
+    <li class="model-card__equipment-item">
+        Антиблокировочная система ABS
+    </li>
+    <li class="model-card__equipment-item">
+        Система помощи при экстренном торможении (BA)
+    </li>
+    <li class="model-card__equipment-item">
+        Электронное распределение тормозных усилий (EBD)
+    </li>
+    <li class="model-card__equipment-item">
+        Система стабилизации курсовой устойчивости (ESC)
+    </li>
+    <li class="model-card__equipment-item">
+        Система помощи при трогании в подъем (HHC)
+    </li>
+    <li class="model-card__equipment-item">
+        Антипробуксовочная система (TCS)
+    </li>
+    <li class="model-card__equipment-item">
+        Передние и боковые подушки безопасности
+    </li>
+    <li class="model-card__equipment-item">
+        Датчик давления в шинах
+    </li>
+    <li class="model-card__equipment-item">
+        Размерность шин 205/50 R17
+    </li>
+</ul>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <div class="model-card__wrap" id="crossover">
+            <div class="model-card__item model-card__item_second">
+                <div class="model-card__content">
+                    <div class="model-card__title title-md">evolute</div>
+                    <div class="model-card__icon">
+                        <img src="./img/content/model-card/i-joy.svg" alt="">
+                    </div>
+                    <div class="model-card__img">
+                        <picture>
+                            <img src="./img/content/model-card/img_2.png" alt="" loading="lazy" width="1000" height="666">
+                        </picture>
+                    </div>
+                </div>
+                <ul class="model-card__list model-card__list_second">
+                    <li class="model-card__list-item">
+                        <span>Яркий внешний вид, практичный салон</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Практичный салон</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Отсутствие расходов на топливо</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Богатое опциональное оснащение</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Качественные материалы отделки</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Надежная конструкция</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="model-card__bottom js-model-card-panel">
+                <div class="model-card__price">
+                    <span class="model-card__price-title text-md">Стоимость</span>
+                    <span class="model-card__numb">3 790 000 ₽</span>
+                    <span class="model-card__text">*без учета субсидирования</span>
+                </div>
+                <div class="model-card__right">
+                    <div class="model-card__btn js-model-card-btn" data-type="tech">
+                        <div class="model-card__btn-icon">
+                            <img src="./img/content/model-card/settings.svg" alt="">
+                        </div>
+                        <div class="model-card__btn-text">
+                            Технические <br> характеристики
+                        </div>
+                        <div class="model-card__btn-switch">
+                            <svg data-type="plus">
+                                <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                            </svg>
+
+                            <svg data-type="minus">
+                                <use xlink:href="./img/sprites/sprite.svg#minus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="model-card__btn js-model-card-btn" data-type="equipment">
+                        <div class="model-card__btn-icon">
+                            <img src="./img/content/model-card/list.svg" alt="">
+                        </div>
+                        <div class="model-card__btn-text">
+                            Комплектация <br> автомобиля
+                        </div>
+                        <div class="model-card__btn-switch">
+                            <svg data-type="plus">
+                                <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                            </svg>
+
+                            <svg data-type="minus">
+                                <use xlink:href="./img/sprites/sprite.svg#minus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-card__tables">
+    <div class="model-card__table" data-type="tech">
+        <div class="model-card__table-title">
+            Технические характеристики
+        </div>
+
+        <div class="model-card__table-flex">
+            <ul class="model-card__tech">
+    <li class="model-card__tech-item">
+        <span>Максимальная мощность (л.с.)</span>
+        <b>163</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Максимальный крутящий момент Нм</span>
+        <b>230</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Максимальная скорость, (км/ч)</span>
+        <b>150</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время разгона до 100 км/ч</span>
+        <b>9.5</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Емкость батареи кВч</span>
+        <b>58</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Запас хода (км)</span>
+        <b>420</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Длина (мм)</span>
+        <b>4680</b>
+    </li>
+</ul>
+
+<ul class="model-card__tech">
+    <li class="model-card__tech-item">
+        <span>Ширина (мм)</span>
+        <b>1720</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Высота (мм)</span>
+        <b>1530</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Колёсная база (мм)</span>
+        <b>2700</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Объем багажного отделения (л)</span>
+        <b>502</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время медленной зарядки (Type2: от 5% до 100% (ч.))</span>
+        <b>8.5</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время быстрой зарядки (GB/T, CСS2: 30% -80%) (мин.)</span>
+        <b>36</b>
+    </li>
+</ul>
+        </div>
+        
+    </div>
+    <div class="model-card__table" data-type="equipment">
+        <div class="model-card__table-title">
+            Комплектация автомобиля
+        </div>
+
+        <div class="model-card__table-flex">
+            <ul class="model-card__equipment">
+    <li class="model-card__equipment-item">
+        Галогеновые передние фары
+    </li>
+    <li class="model-card__equipment-item">
+        Кожаная обивка сидений
+    </li>
+    <li class="model-card__equipment-item">
+        Розетки USB на втором ряду × 2
+    </li>
+    <li class="model-card__equipment-item">
+        Регулировка руля по высоте
+    </li>
+    <li class="model-card__equipment-item">
+        Задние датчики парковки
+    </li>
+    <li class="model-card__equipment-item">
+        Электрический усилитель руля (EPS)
+    </li>
+    <li class="model-card__equipment-item">
+        Электронный стояночный тормоз（EPB）
+    </li>
+    <li class="model-card__equipment-item">
+        Обогрев заднего стекла
+    </li>
+    <li class="model-card__equipment-item">
+        Зеркала заднего вида с электроприводом и обогревом
+    </li>
+    <li class="model-card__equipment-item">
+        Предпусковой подогреватель батареи и салона Webasto
+    </li>
+    <li class="model-card__equipment-item">
+        Электропривод передних и задних стеклоподъемников
+    </li>
+    <li class="model-card__equipment-item">
+        Климат-контроль
+    </li>
+    <li class="model-card__equipment-item">
+        Система рекуперации энергии
+    </li>
+    <li class="model-card__equipment-item">
+        Крепление детского кресла ISO FIX
+    </li>
+    <li class="model-card__equipment-item">
+        Центральный замок с ДУ
+    </li>
+</ul>
+
+<ul class="model-card__equipment">
+    <li class="model-card__equipment-item">
+        Иммобилайзер
+    </li>
+    <li class="model-card__equipment-item">
+        Комбинированная панель приборов
+        (7-дюймовый TFT-экран + двухсегментный экран)
+    </li>
+    <li class="model-card__equipment-item">
+        Радио + MP3 плеер + USB / AUX
+    </li>
+    <li class="model-card__equipment-item">
+        2 динамика
+    </li>
+    <li class="model-card__equipment-item">
+        Легкосплавные диски 17”
+    </li>
+    <li class="model-card__equipment-item">
+        Антиблокировочная система ABS
+    </li>
+    <li class="model-card__equipment-item">
+        Система помощи при экстренном торможении (BA)
+    </li>
+    <li class="model-card__equipment-item">
+        Электронное распределение тормозных усилий (EBD)
+    </li>
+    <li class="model-card__equipment-item">
+        Система стабилизации курсовой устойчивости (ESC)
+    </li>
+    <li class="model-card__equipment-item">
+        Система помощи при трогании в подъем (HHC)
+    </li>
+    <li class="model-card__equipment-item">
+        Антипробуксовочная система (TCS)
+    </li>
+    <li class="model-card__equipment-item">
+        Передние и боковые подушки безопасности
+    </li>
+    <li class="model-card__equipment-item">
+        Датчик давления в шинах
+    </li>
+    <li class="model-card__equipment-item">
+        Размерность шин 205/50 R17
+    </li>
+</ul>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <div class="model-card__wrap" id="minivan">
+            <div class="model-card__item model-cards__item_third">
+                <div class="model-card__content">
+                    <div class="model-card__title title-md">evolute</div>
+                    <div class="model-card__icon model-card__icon_md">
+                        <img src="./img/content/model-card/i-van.svg" alt="">
+                    </div>
+                    <div class="model-card__img">
+                        <picture>
+                            <img src="./img/content/model-card/img_3.png" alt="" loading="lazy" width="1000" height="666">
+                        </picture>
+                    </div>
+                </div>
+                <ul class="model-card__list">
+                    <li class="model-card__list-item">
+                        <span>Практичный салон</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Отсутствие расходов на топливо</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Богатое опциональное оснащение</span>
+                    </li>
+                    <li class="model-card__list-item">
+                        <span>Надежная конструкция</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="model-card__bottom js-model-card-panel">
+                <div class="model-card__price">
+                    <span class="model-card__price-title text-md">Стоимость</span>
+                    <span class="model-card__numb">3 550 000 ₽</span>
+                    <span class="model-card__text">*без учета субсидирования</span>
+                </div>
+                <div class="model-card__right ">
+                    <div class="model-card__btn js-model-card-btn" data-type="tech">
+                        <div class="model-card__btn-icon">
+                            <img src="./img/content/model-card/settings.svg" alt="">
+                        </div>
+                        <div class="model-card__btn-text">
+                            Технические <br> характеристики
+                        </div>
+                        <div class="model-card__btn-switch">
+                            <svg data-type="plus">
+                                <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                            </svg>
+
+                            <svg data-type="minus">
+                                <use xlink:href="./img/sprites/sprite.svg#minus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="model-card__btn js-model-card-btn" data-type="equipment">
+                        <div class="model-card__btn-icon">
+                            <img src="./img/content/model-card/list.svg" alt="">
+                        </div>
+                        <div class="model-card__btn-text">
+                            Комплектация <br> автомобиля
+                        </div>
+                        <div class="model-card__btn-switch">
+                            <svg data-type="plus">
+                                <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                            </svg>
+
+                            <svg data-type="minus">
+                                <use xlink:href="./img/sprites/sprite.svg#minus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-card__tables">
+    <div class="model-card__table" data-type="tech">
+        <div class="model-card__table-title">
+            Технические характеристики
+        </div>
+
+        <div class="model-card__table-flex">
+            <ul class="model-card__tech">
+    <li class="model-card__tech-item">
+        <span>Максимальная мощность (л.с.)</span>
+        <b>163</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Максимальный крутящий момент Нм</span>
+        <b>230</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Максимальная скорость, (км/ч)</span>
+        <b>150</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время разгона до 100 км/ч</span>
+        <b>9.5</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Емкость батареи кВч</span>
+        <b>58</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Запас хода (км)</span>
+        <b>420</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Длина (мм)</span>
+        <b>4680</b>
+    </li>
+</ul>
+
+<ul class="model-card__tech">
+    <li class="model-card__tech-item">
+        <span>Ширина (мм)</span>
+        <b>1720</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Высота (мм)</span>
+        <b>1530</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Колёсная база (мм)</span>
+        <b>2700</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Объем багажного отделения (л)</span>
+        <b>502</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время медленной зарядки (Type2: от 5% до 100% (ч.))</span>
+        <b>8.5</b>
+    </li>
+    <li class="model-card__tech-item">
+        <span>Время быстрой зарядки (GB/T, CСS2: 30% -80%) (мин.)</span>
+        <b>36</b>
+    </li>
+</ul>
+        </div>
+        
+    </div>
+    <div class="model-card__table" data-type="equipment">
+        <div class="model-card__table-title">
+            Комплектация автомобиля
+        </div>
+
+        <div class="model-card__table-flex">
+            <ul class="model-card__equipment">
+    <li class="model-card__equipment-item">
+        Галогеновые передние фары
+    </li>
+    <li class="model-card__equipment-item">
+        Кожаная обивка сидений
+    </li>
+    <li class="model-card__equipment-item">
+        Розетки USB на втором ряду × 2
+    </li>
+    <li class="model-card__equipment-item">
+        Регулировка руля по высоте
+    </li>
+    <li class="model-card__equipment-item">
+        Задние датчики парковки
+    </li>
+    <li class="model-card__equipment-item">
+        Электрический усилитель руля (EPS)
+    </li>
+    <li class="model-card__equipment-item">
+        Электронный стояночный тормоз（EPB）
+    </li>
+    <li class="model-card__equipment-item">
+        Обогрев заднего стекла
+    </li>
+    <li class="model-card__equipment-item">
+        Зеркала заднего вида с электроприводом и обогревом
+    </li>
+    <li class="model-card__equipment-item">
+        Предпусковой подогреватель батареи и салона Webasto
+    </li>
+    <li class="model-card__equipment-item">
+        Электропривод передних и задних стеклоподъемников
+    </li>
+    <li class="model-card__equipment-item">
+        Климат-контроль
+    </li>
+    <li class="model-card__equipment-item">
+        Система рекуперации энергии
+    </li>
+    <li class="model-card__equipment-item">
+        Крепление детского кресла ISO FIX
+    </li>
+    <li class="model-card__equipment-item">
+        Центральный замок с ДУ
+    </li>
+</ul>
+
+<ul class="model-card__equipment">
+    <li class="model-card__equipment-item">
+        Иммобилайзер
+    </li>
+    <li class="model-card__equipment-item">
+        Комбинированная панель приборов
+        (7-дюймовый TFT-экран + двухсегментный экран)
+    </li>
+    <li class="model-card__equipment-item">
+        Радио + MP3 плеер + USB / AUX
+    </li>
+    <li class="model-card__equipment-item">
+        2 динамика
+    </li>
+    <li class="model-card__equipment-item">
+        Легкосплавные диски 17”
+    </li>
+    <li class="model-card__equipment-item">
+        Антиблокировочная система ABS
+    </li>
+    <li class="model-card__equipment-item">
+        Система помощи при экстренном торможении (BA)
+    </li>
+    <li class="model-card__equipment-item">
+        Электронное распределение тормозных усилий (EBD)
+    </li>
+    <li class="model-card__equipment-item">
+        Система стабилизации курсовой устойчивости (ESC)
+    </li>
+    <li class="model-card__equipment-item">
+        Система помощи при трогании в подъем (HHC)
+    </li>
+    <li class="model-card__equipment-item">
+        Антипробуксовочная система (TCS)
+    </li>
+    <li class="model-card__equipment-item">
+        Передние и боковые подушки безопасности
+    </li>
+    <li class="model-card__equipment-item">
+        Датчик давления в шинах
+    </li>
+    <li class="model-card__equipment-item">
+        Размерность шин 205/50 R17
+    </li>
+</ul>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+    <section class="guarantees">
+    <div class="container">
+        <div class="guarantees__wrap">
+            <div class="guarantees__left">
+                <h2 class="guarantees__title title-md">Гарантии</h2>
+                <p class="guarantees__text text-sm">
+                    техническое обслуживание в дилерском центре EVOLUTE КЛЮЧАВТО Краснодар
+                </p>
+            </div>
+            <div class="guarantees__right">
+                <div class="guarantees__item">
+                    <span class="guarantees__item-text">возраст</span>
+                    <span class="guarantees__item-numb">3 года</span>
+                </div>
+                <div class="guarantees__item">
+                    <span class="guarantees__item-text">пробег</span>
+                    <span class="guarantees__item-numb">100 000 км</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="concept">
+    <div class="concept__wrap">
+        <div class="concept__title title-md">Концепция ESG</div>
+        <p class="concept__text text-sm">стремление сделать наши города чистыми <br> и прогрессивными</p>
+        <div class="concept__list">
+            <div class="concept__list-item">
+                <picture>
+                    <img src="./img/content/concept/1.jpg" alt=""  width="320" height="421">
+                </picture>
+            </div>
+            <div class="concept__list-item">
+                <picture>
+                    <img src="./img/content/concept/2.jpg" alt="" width="320" height="432">
+                </picture>
+            </div>
+            <div class="concept__list-item">
+                <picture>
+                    <img src="./img/content/concept/3.jpg" alt="" width="320" height="629">
+                </picture>
+            </div>
+            <div class="concept__list-item">
+                <picture>
+                    <img src="./img/content/concept/4.jpg" alt="" width="320" height="432">
+                </picture>
+            </div>
+            <div class="concept__list-item">
+                <picture>
+                    <img src="./img/content/concept/5.jpg" alt="" width="320" height="419">
+                </picture>
+            </div>
+        </div>
+
+        <div class="concept__list concept__list_mob">
+            <div class="concept__list-col">
+                <div class="concept__list-item">
+                    <picture>
+                        <img src="./img/content/concept/1.jpg" alt=""  width="320" height="421">
+                    </picture>
+                </div>
+                <div class="concept__list-item">
+                    <picture>
+                        <img src="./img/content/concept/3.jpg" alt="" width="320" height="629">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="concept__list-col">
+                <div class="concept__list-item">
+                    <picture>
+                        <img src="./img/content/concept/2.jpg" alt="" width="320" height="432">
+                    </picture>
+                </div>
+                <div class="concept__list-item">
+                    <picture>
+                        <img src="./img/content/concept/4.jpg" alt="" width="320" height="432">
+                    </picture>
+                </div>
+                <div class="concept__list-item">
+                    <picture>
+                        <img src="./img/content/concept/5.jpg" alt="" width="320" height="419">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <div class="map">
+    <div class="container">
+        <div class="map__wrap">
+            <div class="map__tooltip">
+                <span>Карта зарядных станций </span>
+
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#icon_energy"></use>
+                </svg>
+            </div>
+            <div class="map__container" id="ymaps"></div>
+            <div class="map__over js-map-over">
+                Кликните чтобы активировать карту
+            </div>
+        </div>
+    </div>
+</div>
+
+   <div class="test-drive">
+    <div class="container">
+        <div class="test-drive__wrap">
+            <div class="test-drive__content">
+                <div class="test-drive__title title-md">
+                    Записаться <br>на тест-драйв
+                </div>
+
+                <div class="test-drive__img test-drive__img_mobile">
+                    <picture>
+                        <img src="./img/content/test.jpg" alt="" width="608" height="390">
+                    </picture>
+                </div>
+
+                <form action="" class="form test-drive__form js-form">
+                    <label class="form__label">
+                        <span>Ваше имя</span>
+                        <input type="text" name="name" class="form__input" placeholder="Введите имя">
+
+                        
+                    </label>
+                    <label class="form__label">
+                        <span>Телефон</span>
+                        <input type="text" name="phone" class="form__input js-input-phone" placeholder="+ 7 (___) ___ - __ - __">
+
+                    </label>
+                    <button class="btn btn_white">Записаться</button>
+                </form>
+            </div>
+            <div class="test-drive__img">
+                <picture>
+                    <img src="./img/content/test.jpg" alt="" width="608" height="390">
+                </picture>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal">
+    <div class="modal__container" id="modal-test-drive">
+        <div class="modal__box">
+            <div class="modal__wrap">
+                <div class="modal__title title-md">
+                    Записаться <br>на тест-драйв
+                </div>
+
+                <form action="" class="form modal__form js-form">
+                    <label class="form__label">
+                        <span>Ваше имя</span>
+                        <input type="text" name="name" class="form__input" placeholder="Введите имя">
+
+                        
+                    </label>
+                    <label class="form__label">
+                        <span>Телефон</span>
+                        <input type="text" name="phone" class="form__input js-input-phone" placeholder="+ 7 (___) ___ - __ - __">
+
+                    </label>
+                    <button class="btn btn_blue">Записаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <svg width="50" height="50">
+                <use xlink:href="./img/sprites/sprite.svg#logo-f"></use>
+            </svg>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__copy">
+                <span>Evolute</span>
+                <span>© Copyright 2022</span>
+            </div>
+            <button class="footer__btn js-footer-btn">
+                Дисклеймер
+                <svg width="16" height="16">
+                    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                </svg>                  
+            </button>
+        </div>
+
+        <div class="footer__desc">
+            <p>
+                Повседневная практика показывает, что сложившаяся структура организации, а также свежий взгляд на 
+                привычные вещи — безусловно открывает новые горизонты для существующих финансовых и административных условий. 
+                Противоположная точка зрения подразумевает, что стремящиеся вытеснить традиционное производство, нанотехнологии 
+                объединены в целые кластеры себе подобных. Таким образом, высококачественный прототип будущего проекта не оставляет 
+                шанса для кластеризации усилий. 
+            </p>
+
+            <p>
+                Принимая во внимание показатели успешности, постоянный количественный рост и сфера нашей активности предопределяет 
+                высокую востребованность форм воздействия. Повседневная практика показывает, что реализация намеченных плановых 
+                заданий способствует подготовке и реализации вывода текущих активов. В своём стремлении повысить качество жизни, 
+                они забывают, что синтетическое тестирование является качественно новой ступенью вывода текущих активов. 
+            </p>
+
+            <p>
+                А также действия представителей оппозиции неоднозначны и будут призваны к ответу. Принимая во внимание показатели успешности, 
+                семантический разбор внешних противодействий предопределяет высокую востребованность стандартных подходов. Сложно сказать, почему 
+                сделанные на базе интернет-аналитики выводы своевременно верифицированы. Внезапно, явные признаки победы институционализации 
+                и по сей день остаются уделом либералов, которые жаждут быть смешаны с не уникальными данными до степени совершенной неузнаваемости, 
+                из-за чего возрастает их статус бесполезности. А также предприниматели в сети интернет набирают популярность среди определенных слоев 
+                населения, а значит, должны быть представлены в исключительно положительном свете. 
+            </p>
+
+            <p>
+                В рамках спецификации современных стандартов, базовые сценарии поведения пользователей освещают чрезвычайно интересные 
+                особенности картины в целом, однако конкретные выводы, разумеется, подвергнуты целой серии независимых исследований. 
+                Идейные соображения высшего порядка, а также семантический разбор внешних противодействий однозначно фиксирует необходимость новых предложений...
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+        <script>
+    let isLoadSources = false;
+    const touch = isTouchDevice()
+    window.addEventListener('scroll', userEventsInit);
+
+    if (!touch) {
+        window.addEventListener("mousemove", userEventsInit)
+    }else {
+        window.addEventListener("touchstart", userEventsInit)
+    }
+
+    function isTouchDevice() {
+        return (('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0) ||
+            (navigator.msMaxTouchPoints > 0));
+    }
+
+    function userEventsInit() {
+        window.removeEventListener("mousemove", userEventsInit);
+        window.removeEventListener("touchstart", userEventsInit);
+        window.removeEventListener('scroll', userEventsInit);
+
+        loadStyles("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css")
+            .then(style => loadStyles("https://vjs.zencdn.net/7.20.2/video-js.css"))
+
+        loadScript("./libs/jquery-3.5.1.min.js")
+            .then(script => loadScript("./libs/jquery.inputmask.min.js"))
+            .then(script => loadScript("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"))
+            .then(script => loadScript("https://vjs.zencdn.net/7.20.2/video.min.js"))
+            .then(script => loadScript("https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"))
+            .then(script => loadScript("js/main.js"))
+            .then(script => isLoadSources = true )
+    }
+
+    function loadStyles(href) {
+        return new Promise(function(resolve, reject) {
+            let link = document.createElement('link');
+            link.href = href;
+            link.rel = "stylesheet"
+            link.type = "text/css"
+            link.onload = () => resolve(link);
+            link.onerror = () => reject(new Error(`Ошибка загрузки скрипта ${src}`));
+
+            document.head.append(link);
+        });
+    }
+
+    
+    function loadScript(src) {
+        return new Promise(function(resolve, reject) {
+            let script = document.createElement('script');
+            script.src = src;
+
+            script.onload = () => resolve(script);
+            script.onerror = () => reject(new Error(`Ошибка загрузки скрипта ${src}`));
+
+            document.head.append(script);
+        });
+    }
+    
+    headerInit()
+
+    function headerInit() {
+        const burger = document.querySelector(".js-header-burger");
+
+        burger.addEventListener("click", function() {
+            if (isLoadSources) return
+            document.body.style.overflow = "hidden"
+            this.classList.add("is-active");
+            document.querySelector(".js-models ").classList.add("is-show");
+        })
+    }
+
+</script>
+    </body>
+</html>
